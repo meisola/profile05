@@ -1,0 +1,346 @@
+html {
+
+
+width: 1280px;
+ background-color:black;
+margin: auto;
+
+
+}
+
+/*header*/
+header {
+  position:relative;
+  width:100%;
+  height:44px;
+
+}
+header a{
+  text-decoration: none;
+}
+header h1{
+  	color:#FEFEFF;
+   font-size: 300%;
+   margin-left: 30px;
+  font-family:標楷體;
+}
+header h2{
+margin-left: 130px;
+margin-top: -80px;
+	color:#FEFEFF;
+font-family:標楷體;
+font-size: 250%;
+}
+
+.site-nav ul {
+
+	margin-left: 0px;
+  margin-top: 0px;
+	padding: 0;
+background: red;
+
+}
+.site-nav li {
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+  margin-top: 3px;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  margin-left: 100px;
+  font-size: 170%;
+
+}
+.site-nav a:hover{
+color: black;
+}
+.site-nav a {
+	display: block;
+	color:#FEFEFF;
+	text-decoration:none;
+  font-family: Arial;
+	padding: 10px 20px;
+	//border: 3px solid white;
+	border-bottom: none;
+font-family:標楷體;
+}
+/*header*/
+.main-pic img{
+width: 1265px;
+
+}
+
+/*-------ban-selet------*/
+
+.ban-text p{
+color:#FEFEFF;
+font-family: 標楷體;
+}
+
+#ban-title {
+  font-size: 280%;
+text-align: center;
+}
+
+/*---------ban-select----------*/
+
+/*--------ban-pic1------------*/
+.ban-pic1{
+  width: 623px;
+  float: right;
+  background-color: #5f7f3f;
+}
+.ban-pic1 p{
+font-size: 180%;
+margin-left: 65px;
+
+}
+
+/*-------ban-pic1 END---------*/
+/*--------ban-pic2------------*/
+
+.ban-pic2{
+  width: 640px;
+  float: left;
+  background-color: #5f7f3f;
+  margin-top: -3px;
+}
+.ban-pic2 p{
+
+font-size: 180%;
+margin-left: 65px;
+
+}
+#ban-pic2{
+  margin-top: -2px;
+  float: right;
+  width: 623px;
+  height: 586px;
+}
+/*-------ban-pic2 END---------*/
+/*--------ban-pic3------------*/
+.ban-pic3{
+  margin-top: -5px;
+background-color: #576845;
+height: 800px;
+}
+.ban-pic3 p{
+  margin-top: 3px;
+font-size: 200%;
+margin-left: 70px;
+}
+/*-------ban-pic3 END---------*/
+/*--------ban-pic4------------*/
+.ban-pic4{
+  margin-top: -5px;
+background-color: #576845;
+height: 450px;
+}
+.ban-pic4 p{
+  margin-top: 5px;
+font-size: 200%;
+margin-left: 70px;
+
+}
+/*-------ban-pic4 END---------*/
+.social-icon{
+float: right;
+margin-top: 30px;
+margin-right: 15px;
+}
+.social-icon img{
+
+margin-right: 15px;
+}
+.ic{
+  display:none;
+}
+@media only screen and (min-width:321px) and (max-width:768px){
+
+html{
+  width:768px;
+}
+
+
+.site-nav{
+
+  position: absolute;
+  margin-top: 90px;
+  display: block;
+display: none;
+
+  margin-left: 280px;
+}
+.site-nav li{
+  clear: both;
+
+
+  position: sticky;
+
+}
+.site-nav li a{
+  margin-top: -10px;
+  color:white;
+ background-color: rgba(0,0,0,0.6);;
+}
+header h1{
+  display: inline;
+  font-size: 40px;
+}
+header h2{
+  display: inline;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.ic{
+  position: absolute;
+  display: inline;
+  margin-left: 700px;
+  width: 50px;}
+
+.main-pic img{
+  width: 750px;
+}
+.ban-pic1{
+  width: 375px;
+  height: 341px;
+
+}
+.pic1{
+  width: 375px;
+}
+.ban-text{
+  font-size: 58%;
+
+}
+#ban-pic2{
+  width: 375px;
+  height: 320px;
+margin-top: -3px;
+}
+.ban-pic2{
+  width: 375px;
+  height: 320px;
+
+
+}
+.ban-pic2 p{
+  font-size: 15px;
+}
+.ban-pic3{
+  height: 500px;
+}
+.ban-pic4{
+  height:340px;
+}
+}
+@media screen and (max-width:320px)
+{
+html{
+  width: 320px;
+}
+.site-nav{
+
+  position: absolute;
+  margin-top: 90px;
+  display: block;
+display: none;
+
+  margin-left: -170px;
+}
+.site-nav li{
+  clear: both;
+
+
+  position: sticky;
+
+}
+.site-nav li a{
+  margin-top: -10px;
+  color:white;
+ background-color: rgba(0,0,0,0.6);;
+}
+header h1{
+  display: inline;
+}
+header h2{
+  display: inline;
+  margin-left: 0px;
+}
+
+.ic{
+  position: absolute;
+  display: inline;
+  margin-left: 260px;
+  width: 50px;}
+.main-pic img{
+  width: 320px;
+    clear: both;
+}
+.ban-pic1{
+  width: 310px;
+display: none;
+
+
+}
+.pic1{
+
+  width: 320px;
+}
+.ban-text{
+  font-size: 45%;
+
+}
+
+.ban-pic3 p{
+  font-size: 15px;
+  margin-left: 5px;
+
+}
+.ban-pic4 p{
+  font-size: 15px;
+  margin-left: 5px;
+
+}
+
+
+#ban-pic2{
+  width: 320px;
+  height: 320px;
+  margin-top: 60px;
+  display:none;
+
+
+}
+.ban-pic2{
+  width: 320px;
+  height: 320px;
+
+
+}
+.ban-pic2 p{
+  font-size: 15px;
+  margin-left: 20px;
+
+}
+.ban-pic3{
+  height: 500px;
+width: 320px;
+}
+.ban-pic4{
+  height:340px;
+  width: 320px;
+}
+.social-icon img{
+
+width:40px;
+}
+header h1{
+  font-size: 35px;
+  margin-left: -10px;
+}
+header h2{
+  font-size:15px;
+}
+}

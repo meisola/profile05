@@ -1,0 +1,176 @@
+
+ h1 {
+  text-align: center;
+  margin-top: 20px;
+  color:#DBAFC1;
+  font-family:標楷體;
+}
+.bread p{
+  display:inline;
+  color:gray;
+}
+.bread a{
+	text-decoration:none;
+  color:gray;
+}
+#co{
+  color:#3d3d3d;
+}
+
+ul{
+  list-style: none;
+}
+#cards{
+  margin-top":50px;
+  text-align: center;
+
+
+}
+#cards > li{
+float: left;
+margin-left: 170px;
+
+}
+/*card 1*/
+
+button{
+width :100px;
+}
+#card1_btn{
+list-style: none;
+margin-left:-40px;
+margin-top:50px;
+
+}
+#card1_btn li{
+  float:left;
+  margin-left: 10px;
+}
+#btnSignIn{
+
+  background-color:#DBAFC1;
+}
+#btnSignOut{
+  background-color:#DBAFC1;
+}
+#btnSignUp{
+  background-color:#DBAFC1;
+}
+}
+
+.demo-card-wide.mdl-card {
+  width: 100%;
+  height: 350px;
+  margin-top: 50px;
+
+}
+.mdl-card__title {
+  color: #fff;
+  height: 70px;
+  background-color: #545F66;
+}
+.mdl-card__title h2{
+
+padding-top: 20px;
+font-family:monospace;
+font-size: 250%;
+color:#fff;
+}
+.md1-card{
+
+}
+#sign-info {
+  margin-left: -15px;
+  color: #545F66;
+  font-size: 120%;
+  font-family: Arial;
+}
+#btnback{
+  width: 130px;
+  margin-top:410px;
+margin-left: -480px;
+background-color: #D36060;
+}
+/*card1 end */
+
+/*card2 */
+#btnSubmit{
+text-align:center;;
+margin-bottom: 25px;
+margin-left: 15px;
+}
+p{
+  font-size: 16px;
+  color: #545F66;
+  font-family: Arial;
+}
+/*card2 end*/
+
+/*card3*/
+#user-info {
+  padding: 10px;
+  box-sizing: border-box;
+}
+#user-pic {
+  padding:10px;
+  width: 72px;
+  box-sizing: border-box;
+}
+#example-messages{
+padding:0;
+}
+.demo-avatar {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+}
+.mdl-grid{
+  margin: 20px 0 0 20px;
+}
+/*card4*/
+#card4{
+margin-left:200px;
+
+}
+
+#card4 ul {
+  list-style: none;
+  margin: 0px;
+  padding: 20px;
+  height: 250px;
+  overflow: auto;
+}
+#example-messages2 ul li {
+    font-family: Roboto;
+    font-size: 120%;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+#card4 ul li:last-child {
+    margin: 0px;
+}
+#card4 ul .example-chat-username {
+    margin-right: 10px;
+}
+#card4 footer{
+  margin-left: 20px;
+}
+.chatimg{
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px 5px 5px;
+}
+/*card4 end*/
+.fb-comments{
+margin-top:20px;	
+margin-left:300px;
+}
+
+
+
+.clear{
+clear: both;
+}
+
+

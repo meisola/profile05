@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="../img/favicon.ico" rel="icon" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Chatting room</title>
+
+<!-- Firebase JS -->
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+
+<!-- JQuery -->
+ <script src="js/jquery-3.1.1.slim.min.js"></script>
+
+<!-- JS&CSS -->
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+
+
+
+
+
+
+  <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '238784206546038',
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=238784206546038";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+  <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '238784206546038',
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=238784206546038";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bread">
+<a href="../index.html"><p>首頁</p></a>
+<p>></p>
+<a href="../page4-1/index.html">解決途徑</a>
+<p>></p>
+<a id="co" href="">留言板</a>
+</div>
+
+  <div id="header"><h1>登入→匿名留言</h1></div>
+
+
+<ul id="cards">
+
+  <li id="card1">
+
+    <div class="demo-card-wide mdl-card ">
+
+     <div class="mdl-card__supporting-text">
+     <!-- text field -->
+     <form action="#">
+         <div class="mdl-textfield mdl-js-textfield">
+           <input class="mdl-textfield__input" type="text" id="email">
+           <label class="mdl-textfield__label" for="sample1">Email</label>
+         </div>
+     </form>
+     <form action="#">
+         <div class="mdl-textfield mdl-js-textfield">
+           <input class="mdl-textfield__input" type="password" id="password">
+           <label class="mdl-textfield__label" for="sample1">Password</label>
+         </div>
+     </form>
+
+     <!-- Sign Information -->
+  <div class="mdl-card__supporting-text" id="sign-info">No one login...</div>
+     <!-- text field -->
+    </div>
+     <ul id="card1_btn">
+
+
+         <li>
+              <!-- Raised button with ripple -->
+            <button class="mdl-button mdl-js-button mdl-button--Flat button mdl-js-ripple-effect" id="btnSignIn">
+                  Sign In
+            </button>
+        </li>
+        <li>
+             <!-- Raised button with ripple -->
+             <button class="mdl-button mdl-js-button mdl-button--Flat button-js-ripple-effect" id="btnSignUp">
+                         Sign Up
+             </button>
+           </li>
+        <li>
+            <!-- Raised disabled button -->
+              <button class="mdl-button mdl-js-button mdl-button--Flat button" id ="btnSignOut" disabled>
+                  Sign Out
+              </button>
+        </li>
+      </ul>
+
+    </div>
+  </li>
+  <!--card1 end-->
+
+
+
+<input type ="button" class="mdl-button mdl-js-button mdl-button--Flat button mdl-js-ripple-effect"onclick="history.back()" id="btnback"value="back"></input>
+
+<li id="card4">
+      <div class="demo-card-wide mdl-card mdl-shadow--4dp">
+
+
+           <div class="mdl-card__supporting-text">
+         <ul id='example-messages2' class="example-chat-messages"></ul>
+         <footer>
+           <div class="mdl-layout__content mdl-color--grey-100">
+             <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="messageInput" name="email" placeholder="Type a message ..."/>
+           </div>
+         </footer>
+       </div>
+      </div>
+    </li>
+  <!--card4 end-->
+<div class="clear"></div>
+<div class="fb-comments" data-href="https://www.facebook.com/TWmeisola/posts/1153390044778857?comment_id=1157504687700726&amp;notif_t=share_comment&amp;notif_id=1484068552778656" data-width="500" data-numposts="5"></div>
+
+
+
+
+
+</ul>
+
+
+
+
+  </body>
+
+</html>
